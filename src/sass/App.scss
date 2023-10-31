@@ -1,0 +1,60 @@
+@import "./colors.scss";
+
+.mainContainer {
+  min-height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 3rem 0 0 0;
+    text-align: center;
+
+    .title {
+      font-size: 2.1rem;
+      color: $white;
+      font-weight: 600;
+    }
+
+    .desc {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $white;
+      letter-spacing: 0.5px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+  }
+
+  .signupContainer {
+    .offerBtn {
+      align-items: center;
+      background-color: $blue;
+      border-radius: 6px;
+      border: none;
+      box-shadow: 0 6px 0 0 #b85a5aab;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.3rem;
+      padding: 1.5rem 0;
+      row-gap: 1rem;
+      width: 100%;
+      letter-spacing: 0.5px;
+
+      span:first-child {
+        color: $white;
+        font-weight: 600;
+      }
+
+      span:last-child {
+        color: $white;
+        opacity: 0.9;
+      }
+    }
+  }
+}
