@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+.form {
+  background-color: $white;
+  padding: 2rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  border-radius: 6px;
+
+  input {
+    border: 1px solid $input-border-color;
+    outline: none;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    color: $blue;
+    font-weight: 600;
+  }
+
+  input::placeholder {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+  }
+
+  button {
+    background-color: $green;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 0 0 #31b37b;
+    cursor: pointer;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $grayish-blue;
+    letter-spacing: 0.1px;
+    word-spacing: 0.5px;
+
+    span {
+      color: $red;
+      font-weight: 700;
+    }
+  }
+}

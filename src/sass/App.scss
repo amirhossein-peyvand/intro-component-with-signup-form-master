@@ -6,13 +6,13 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 3.5rem;
 
   .textContainer {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    padding: 3rem 0 0 0;
+    padding: 2rem 0 0 0;
     text-align: center;
 
     .title {
@@ -32,6 +32,10 @@
   }
 
   .signupContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
     .offerBtn {
       align-items: center;
       background-color: $blue;
