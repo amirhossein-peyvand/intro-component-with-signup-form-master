@@ -5,24 +5,55 @@
   padding: 2rem 1.7rem;
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
   border-radius: 6px;
 
-  input {
-    border: 1px solid $input-border-color;
-    outline: none;
-    padding: 1rem;
-    border-radius: 3px;
-    font-size: 1.4rem;
-    color: $blue;
-    font-weight: 600;
-  }
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
 
-  input::placeholder {
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    word-spacing: 1px;
+    div {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      input {
+        border-radius: 3px;
+        border: 1px solid $input-border-color;
+        padding: 1rem;
+        color: $blue;
+        font-size: 1.4rem;
+        font-weight: 600;
+        outline: none;
+        width: 100%;
+        transition: all 0.2s;
+      }
+
+      input:focus {
+        border-color: $green;
+      }
+
+      input::placeholder {
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+      }
+
+      .err {
+        position: absolute;
+        right: 3%;
+        width: 1.5rem;
+      }
+    }
+
+    .errMessage {
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: right;
+      color: $red;
+    }
   }
 
   button {
