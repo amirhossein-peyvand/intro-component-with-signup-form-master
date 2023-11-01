@@ -1,12 +1,13 @@
 @import "./colors.scss";
 
 .mainContainer {
-  min-height: 100vh;
-  width: 95%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
   row-gap: 3.5rem;
+  width: 95%;
 
   .textContainer {
     display: flex;
@@ -58,6 +59,53 @@
       span:last-child {
         color: $white;
         opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .mainContainer {
+    width: 60rem;
+    row-gap: 5.5rem;
+
+    .textContainer {
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .desc {
+        font-size: 1.7rem;
+        letter-spacing: 0.8px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mainContainer {
+    align-items: center;
+    flex-direction: row;
+    max-width: 108rem;
+    width: 70%;
+    column-gap: 1.5rem;
+
+    .textContainer {
+      width: 50%;
+      text-align: left;
+      row-gap: 2.5rem;
+
+      .title {
+        font-size: 4rem;
+        line-height: 1.1;
+      }
+    }
+
+    .signupContainer {
+      width: 50%;
+
+      form {
+        padding: 3rem;
       }
     }
   }

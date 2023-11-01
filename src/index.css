@@ -23,3 +23,13 @@ body {
 #root {
   width: 100%;
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: url("../src/assets/bg-intro-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+  }
+}
